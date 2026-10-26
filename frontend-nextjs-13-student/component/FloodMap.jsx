@@ -171,11 +171,11 @@ export default function FloodMap({ isSimulating }) {
                 <TileLayer
                     url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                    className="dark-tiles"
+                    
                 />
 
                 <FitOnData points={fitPoints} />
-                <FlyToSelected selectedKey={selectedKey} items={extras.visible} />
+                <FlyToSelected selectedKey={selectedKey} items={extras.visible} />  
 
                 {/* ชั้นข้อมูล GISTDA สีน้ำเงิน (วางก่อน เพื่อให้สีแดงของโหมดจำลองซ้อนอยู่ด้านบน) */}
                 <GistdaOverlays enabled={gistdaOn} onStatus={handleGistdaStatus} />
